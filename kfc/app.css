@@ -1,0 +1,24 @@
+
+h6{
+font-size: 12px;
+display: flex;
+justify-content: center;
+align-items: center;
+word-break:break-all;
+white-space: break-word;
+}
+
+
+footer{
+background-color: red;
+height: 70px;
+width: 100%;
+margin-top: 50px;
+
+}
+
+.text{
+ text-overflow: ellipsis;
+
+}
+

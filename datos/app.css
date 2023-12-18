@@ -1,0 +1,23 @@
+#table{
+display: inline-table;
+overflow-x: auto;
+
+}
+
+input:invalid {
+    outline: 2px solid green;
+  }
+  
+input:valid {
+    outline: 2px solid  red;
+  }
+
+input:required {
+    border-color: #428000;
+    border-width: 3px;
+  }
+  
+input:required:invalid {
+    border-color: #ff0000;
+    border-width: 3px;
+  }

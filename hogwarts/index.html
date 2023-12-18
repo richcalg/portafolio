@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogwarts</title>
+    <link href="https://fonts.cdnfonts.com/css/parry-hotter" rel="stylesheet">
+    <link rel="stylesheet" href="./app.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.cdnfonts.com/css/magic-school-one" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+  <h1 class="title">Harry potter</h1>
+  <img class="sombrero" src="./sombrero.png"></div>
+<row class="row">
+  <div class="col-3">
+    <h2 class="sub">seleciona 3 cualidades</h2>
+    <br>
+    <div class="form-check">
+    <div name="cualidades"  id="cualidades" multiple>
+      <input type="checkbox" onchange="sombrero('valor')" value="valor">valor</>
+      <input type="checkbox" onchange="sombrero('fuerza')" value="fuerza">fuerza</>
+      <input type="checkbox" onchange="sombrero('audacia')" value="audacia">audacia</>
+      <input type="checkbox" onchange="sombrero('justicia')" value="Justicia">Justicia</>
+      <input type="checkbox" onchange="sombrero('lealtad')"  value="lealtad<">lealtad</>
+      <input type="checkbox" onchange="sombrero('paciencia')"  value="paciencia">paciencia</>
+      <input type="checkbox" onchange="sombrero('creatividad')" value="oreativida">creatividad</>
+      <input type="checkbox" onchange="sombrero('erudicion')" value="rudiccion">erudiccion</>
+      <input type="checkbox" onchange="sombrero('astucia')"  value="astucia">astucia</>
+      <input type="checkbox" onchange="sombrero('ambicion')"  value="ambicion">ambicion</>
+      <input type="checkbox" onchange="sombrero('determinacion')"  value="ddeterminacion">determinacion</>
+    </select>
+    </div>
+  </div>
+
+ 
+   
+    <input class="boton" type="button" id"sombrero" onclick="sombrero()" value="Empezar a jugar">
+    <br>
+
+  </div>
+  <row class="row">
+    <div class="col-3">
+    <div class="resultado" id="result">presiona para que el sombrero te asigne tu casa</div>
+    <img>
+  </div>
+  </row>
+</div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
