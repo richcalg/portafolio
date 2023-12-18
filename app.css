@@ -1,0 +1,21 @@
+.logo{
+
+font-family: 'The Monkies Ate My Soul', sans-serif;
+color: white;
+font-size: 18px;
+padding-left: 10px;
+
+}
+
+.menu{
+
+color: white;    
+}
+
+.perfil{
+
+ border-radius: 50%; 
+ width: 300px;
+ height: 300px;
+    
+}
