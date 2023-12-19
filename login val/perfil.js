@@ -41,15 +41,53 @@ var persons = [
 
 
 
-persons[0].images.forEach(function(valor){
-    console.log(valor);
-   let parrilla = document.getElementById("parrilla");
-    let col = document.createElement('div');
-    col.classList.add("col-md-4");
-    parrilla.appendChild(col)
+if( let gene = persons.genero.forEach(function(gen) === "femenino"){  
+   
 
-    let img = document.createElement('img');
-    img.classList.add("img-fluid", "img");
-    img.setAttribute('src', valor);
-    col.appendChild(img)
-})
+    persons[0].images.forEach(function(valor){
+        console.log(valor);
+        let parrilla = document.getElementById("parrilla");
+        let col = document.createElement('div');
+        col.classList.add("col-md-4","mt-3");
+        parrilla.appendChild(col)
+
+        let img = document.createElement('img');
+        img.classList.add("img-fluid", "img");
+        img.setAttribute('src', valor);
+        col.appendChild(img);
+
+       let per = document.getElementById('perfil')
+       per.classList.add("body");
+       per.classList.remove("body1")
+      
+       per.setAttribute('src', "./images/img-1.jpg") ;
+        
+
+    
+     
+    })
+}else{
+
+   
+
+        persons[1].images.forEach(function(valor){
+            console.log(valor);
+            let parrilla = document.getElementById("parrilla");
+            let col = document.createElement('div');
+            col.classList.add("col-md-4");
+            parrilla.appendChild(col)
+    
+            let img = document.createElement('img');
+            img.classList.add("img-fluid", "img");
+            img.setAttribute('src', valor);
+            col.appendChild(img)
+    
+           let per = document.getElementById('perfil')
+           per.classList.add("body1")
+           per.classList.remove("body")
+           per.setAttribute('src', "./images/perfilsamuel.jpeg")
+           
+    
+        }
+    }
+}

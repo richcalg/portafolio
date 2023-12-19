@@ -1,11 +1,11 @@
 
 function inicio(){
-var persons = [
+const persons = [
     {
         nombre : "Manuela Madrid",
         correo : "manuela@gmail.com",
         genero : "femenino",
-        password : "Manuela123",
+        password : "123",
         images : [
              './images/img-1.jpg',
              './images/img-2.jpeg',
@@ -23,7 +23,7 @@ var persons = [
         nombre : "Samuel",
         correo : "samuel@gmail.com",
         genero : "masculino",
-        password : "samue123",
+        password : "123",
         images : [
             './images/img-11.jpg',
             './images/img-12.jpg',
@@ -42,15 +42,26 @@ var persons = [
 
 
 
-var correo = document.getElementById('mail').value;
-var pass = document.getElementById('passsword').value;
-persons.forEach(Element =>){
+    let correo = document.getElementById('mail').value;
+    let password = document.getElementById('pass').value;
 
-if (correo== Element.correo && pass== Element.password) {
- sessionStorage.setItem("nombre" persons.nombre)
- sessionStorage.setItem("clv" , 1)
- window.location.href = "perfil.html"
+    persons.forEach(function(user) {
+
+        if (correo === user.correo && password === user.password) {
+
+            sessionStorage.setItem('nombre' , persons.nombre);
+            sessionStorage.setItem('auth' , 1);
+            window.location.href = 'perfil.html';
+
+        
+
+        }else{
+
+            
+
+
+        }
+
+    });
 
 }
-
-}}

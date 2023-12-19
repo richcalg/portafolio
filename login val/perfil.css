@@ -1,4 +1,7 @@
 
+
+
+
 .img {
    
     height: auto;
@@ -11,10 +14,21 @@
 body {
     font-family: "Open Sans", Arial, sans-serif;
     min-height: 100vh;
-    background-color: #fafafa;
+    background-color: hsl(166, 100%, 50%);
     color: #262626;
     padding-bottom: 3rem;
 }
+
+.body1 {
+    font-family: "Open Sans", Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #ff00d0;
+    color: #262626;
+    padding-bottom: 3rem;
+
+}
+
+
 
 img {
     display: block;
@@ -295,7 +309,7 @@ img {
     }
 }
 
-/* Spinner Animation */
+
 
 @keyframes loader {
     to {
@@ -303,13 +317,8 @@ img {
     }
 }
 
-/*
 
-The following code will only run if your browser supports CSS grid.
 
-Remove or comment-out the code block below to see how the browser will fall-back to flexbox & floated styling. 
-
-*/
 
 @supports (display: grid) {
     .profile {
@@ -371,3 +380,9 @@ Remove or comment-out the code block below to see how the browser will fall-back
         }
     }
 }
+
+
+
+
+
+
